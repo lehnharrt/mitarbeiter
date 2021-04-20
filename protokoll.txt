@@ -11,3 +11,6 @@ Erstelle Branch für erste Iteration und wechsele dort hin.
 ➜  mitarbeiter git:(master) git branch stage1
 ➜  mitarbeiter git:(master) git switch stage1
 Zu Branch 'stage1' gewechselt
+
+Mit dem Kommando serve den dev-Server starten und das Projekt validieren.
+➜  mitarbeiter git:(stage1) ng serve
