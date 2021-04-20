@@ -1,1 +1,12 @@
 <p>employee-list works!</p>
+<div class="ui middle aligned selection divided list">
+    <a *ngFor ="let employee of employees" class="item">
+        <div class="content">
+            <div class="header">{{ employee.name }}, {{ employee.vorname }}</div>
+            <div class="metadata">
+                Mitarbeiternummer: {{ employee.mnr }}<br>
+                Gehalt: {{ employee.gehalt }} €
+            </div>
+        </div>
+    </a>
+</div>
