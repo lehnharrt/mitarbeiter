@@ -1,0 +1,13 @@
+Wechsle in das Verzeichnis für NodeProjekte
+➜  ~ cd NodeProjects
+
+Erstelle ein neues Projekt namens "mitarbeiter"
+➜  NodeProjects ng new mitarbeiter
+
+Starte VSCode im neuen Verzeichnis "mitarbeiter"
+➜  NodeProjects code mitarbeiter
+
+Erstelle Branch für erste Iteration und wechsele dort hin.
+➜  mitarbeiter git:(master) git branch stage1
+➜  mitarbeiter git:(master) git switch stage1
+Zu Branch 'stage1' gewechselt
