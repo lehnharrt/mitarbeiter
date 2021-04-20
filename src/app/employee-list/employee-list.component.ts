@@ -1,37 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { Employee } from "../employee";
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Employee } from "../shared/employee";
+import { EmployeeService } from '../shared/employee.service';
 
 @Component({
   selector: 'app-employee-list',
   templateUrl: './employee-list.component.html',
-  styleUrls: ['./employee-list.component.css']
+  styleUrls: ['./employee-list.component.css'],
+  providers: [EmployeeService]
 })
 export class EmployeeListComponent implements OnInit {
-  employees : Employee[];
+  employees: Employee[];
 
-  constructor() { }
+  constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit(): void {
-    this.employees = [
-      {
-        mnr: 123,
-        name: 'Laschet',
-        vorname: 'Armin',
-        gehalt: 120000
-      },
-      {
-        mnr: 124,
-        name: 'Scholz',
-        vorname: 'Olaf',
-        gehalt: 123000
-      },
-      {
-        mnr: 125,
-        name: 'Baerbock',
-        vorname: 'Annalena',
-        gehalt: 130000
-      }
-      
-    ]
+    this.employees = this._employeeService.getEmployees();
   }
 }

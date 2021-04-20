@@ -1,4 +1,12 @@
-<app-employee-list></app-employee-list>
+<app-employee-list>
+  *ngIf="viewState === 'list'" 
+  (showDetailsEvent)="showDetails($event)"
+</app-employee-list>
+
+<app-employee-details
+  *ngIf="viewState === 'details'"
+  (showListEvent)="showList()"
+  [book]="book"></app-employee-details>
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->

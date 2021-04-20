@@ -1,0 +1,10 @@
+<p>employee-li works!</p>
+<div class="content">
+    <div class="header">{{ employee.name }}, {{ employee.vorname }}</div>
+    <div class="metadata">
+        Mitarbeiternummer: {{ employee.mnr }}<br>
+        Gehalt: {{ employee.gehalt }} €
+    </div>
+    <button 
+    (click)="showDetails(employee)">Details</button>
+</div>

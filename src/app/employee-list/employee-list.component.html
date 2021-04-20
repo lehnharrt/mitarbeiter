@@ -1,6 +1,13 @@
 <p>employee-list works!</p>
-<div class="ui middle aligned selection divided list">
-    <a *ngFor ="let employee of employees" class="item">
+<div class="list">
+    <app-employee-li class="item"
+        *ngFor="let e of employees"
+        [employee]="e"
+        (click)="showDetails(e)">
+    </app-employee-li>
+</div>
+<!-- <div class="ui middle aligned selection divided list">
+    <div *ngFor ="let employee of employees" (click)="showDetails(employee)">
         <div class="content">
             <div class="header">{{ employee.name }}, {{ employee.vorname }}</div>
             <div class="metadata">
@@ -8,5 +15,5 @@
                 Gehalt: {{ employee.gehalt }} €
             </div>
         </div>
-    </a>
-</div>
+    </div>
+</div> -->
