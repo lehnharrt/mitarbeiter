@@ -14,3 +14,21 @@ Zu Branch 'stage1' gewechselt
 
 Mit dem Kommando serve den dev-Server starten und das Projekt validieren.
 ➜  mitarbeiter git:(stage1) ng serve
+
+Neue Komponente Employee-List generieren:
+➜  mitarbeiter git:(stage1) ng generate component employee-list
+
+Neues Interface Employee generieren zur Spezifiaktion des Datentyps der Employee-Liste
+➜  mitarbeiter git:(stage1) ✗ ng generate interface Employee
+
+Interface befüllen:
+    mnr: number;
+    name: string;
+    vorname: string;
+    gehalt: number;
+
+Employees property hinzufügen und mit Standarddaten bestücken
+    employees : Employee[];
+    constructor() { }
+    ngOnInit(): void {
+        this.employees = [ {},{},{},... ] }
