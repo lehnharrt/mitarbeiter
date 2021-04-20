@@ -32,3 +32,11 @@ Employees property hinzufügen und mit Standarddaten bestücken
     constructor() { }
     ngOnInit(): void {
         this.employees = [ {},{},{},... ] }
+
+Stage 2 Branch erstellen
+➜  mitarbeiter git:(stage1) git branch stage2
+➜  mitarbeiter git:(stage1) git switch stage2
+Zu Branch 'stage2' gewechselt
+
+Generiere Details Komponente
+➜  mitarbeiter git:(stage2) ✗ ng generate component employee-details  
