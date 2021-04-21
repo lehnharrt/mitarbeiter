@@ -1,0 +1,22 @@
+{
+    "employees": [
+        {
+          "mnr": 123,
+          "name": "Laschet",
+          "vorname": "Armin",
+          "gehalt": 120000
+        },
+        {
+          "mnr": 124,
+          "name": "Scholz",
+          "vorname": "Olaf",
+          "gehalt": 123000
+        },
+        {
+          "mnr": 125,
+          "name": "Baerbock",
+          "vorname": "Annalena",
+          "gehalt": 130000
+        }
+    ]
+}

@@ -40,3 +40,10 @@ Zu Branch 'stage2' gewechselt
 
 Generiere Details Komponente
 ➜  mitarbeiter git:(stage2) ✗ ng generate component employee-details  
+
+Erstelle neuen Branch für Implementierung des Routings
+➜  mitarbeiter git:(stage5) ✗ git branch routing 
+➜  mitarbeiter git:(stage5) git switch routing
+
+Generierung eines Routers, falls dies bei der Projekterstellung noch nicht ausgewählt wurde.
+➜  mitarbeiter git:(routing) ng generate module app-routing --flat --module=app

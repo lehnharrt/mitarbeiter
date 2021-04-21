@@ -3,7 +3,8 @@
     <app-employee-li class="item"
         *ngFor="let e of employees"
         [employee]="e"
-        (click)="showDetails(e)">
+        [routerLink]="e.mnr">
+        <!-- (click)="showDetails(e)"> -->
     </app-employee-li>
 </div>
 <!-- <div class="ui middle aligned selection divided list">

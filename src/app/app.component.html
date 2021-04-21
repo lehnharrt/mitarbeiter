@@ -1,4 +1,14 @@
-<app-employee-list
+
+<br><br>
+<div class="ui menu mainmenu">
+  <ul>
+    <li><a routerLink="home" routerLinkActive="active" >Home </a></li>
+    <li><a routerLink="employees" routerLinkActive="active">
+ Mitarbeiter</a></li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
+<!-- <app-employee-list
   *ngIf="viewState === 'list'" 
   (showDetailsEvent)="appShowDetails($event)">
 </app-employee-list>
@@ -7,7 +17,7 @@
   *ngIf="viewState === 'details'"
   (showListEvent)="appShowList()"
   [detailsEmployee]="appEmployee">
-</app-employee-details>
+</app-employee-details> -->
 
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
