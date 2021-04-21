@@ -1,13 +1,13 @@
 <p>employee-details works!</p>
-<div *ngIf="employee">
+<div *ngIf="detailsEmployee">
     <div class="details">
-        Mitarbeiternummer: {{ employee.mnr }}
+        Mitarbeiternummer: {{ detailsEmployee.mnr }}
         <br>
-        Name: {{ employee.name }}
+        Name: {{ detailsEmployee.name }}
         <br>
-        Vorname: {{ employee.vorname }}
+        Vorname: {{ detailsEmployee.vorname }}
         <br>
-        Gehalt: {{ employee.gehalt }} 
+        Gehalt: {{ detailsEmployee.gehalt }} 
     </div>
-    <button (click)="showEmployeeList()">Zurück zur Mitarbeiterliste</button>
+    <button (click)="detailShowEmployeeList()">Zurück zur Mitarbeiterliste</button>
 </div>

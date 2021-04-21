@@ -7,7 +7,7 @@ import { Employee } from '../shared/employee';
   styleUrls: ['./employee-details.component.css']
 })
 export class EmployeeDetailsComponent implements OnInit {
-  @Input() employee: Employee;
+  @Input() detailsEmployee: Employee;
   @Output() showListEvent = new EventEmitter<any>();
 
   constructor() { }
@@ -15,7 +15,7 @@ export class EmployeeDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  showEmployeeList() {
+  detailShowEmployeeList() {
     this.showListEvent.emit();
   }
 

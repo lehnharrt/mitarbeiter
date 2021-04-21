@@ -11,14 +11,14 @@ type ViewState = 'list' | 'details';
 export class AppComponent {
   title = 'mitarbeiter';
   viewState: ViewState = 'list';
-  employee: Employee;
+  appEmployee: Employee;
 
-  showList() {
+  appShowList() {
     this.viewState = 'list';
   }
 
-  showDetails(employee: Employee) {
-    this.employee = employee;
+  appShowDetails(employee: Employee) {
+    this.appEmployee = employee;
     this.viewState = 'details';
   }
 }
