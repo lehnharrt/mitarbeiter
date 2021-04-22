@@ -15,11 +15,11 @@ export class EmployeeService {
   
   getAll(): Observable<Employee[]> {
     //return this.http.get<any[]>(`${this.api}/employees`);
-    return this.http.get<any[]>('localhost:3000/employees');
+    return this.http.get<any[]>('http://localhost:3000/employees');
     }
 
   public getEmployees() : Employee[] {
-    this.http.get<Employee[]>('localhost:3000/employees').subscribe(data => {this.employees = data});
+    this.http.get<Employee[]>('http://localhost:3000/employees').subscribe(data => {this.employees = data});
     return this.employees;
     /* return [
       {
